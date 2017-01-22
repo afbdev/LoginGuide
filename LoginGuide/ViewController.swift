@@ -12,12 +12,31 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     let cellId = "cellId"
     
+    let pages: [Page] = {
+        let firstTitle = "Share a great listen"
+        let firstMessage = "It's free to send your books to the people in your life. Every recipient's first book is on us."
+        let firstImage = "page1"
+        let firstPage = Page(title: firstTitle, message: firstMessage, imageName: firstImage)
+        
+        let secondTitle = "Send from your library"
+        let secondMessage = "Tap the More menu next to any book. Choose \"Send this Book.\""
+        let secondImage = "page2"
+        let secondPage = Page(title: secondTitle, message: secondMessage, imageName: secondImage)
+        
+        let thirdTitle = "Send from the player"
+        let thirdMessage = "Tap the More menu in the upper corner. Choose \"Send this Book.\""
+        let thirdImage = "page3"
+        let thirdPage = Page(title: thirdTitle, message: thirdMessage, imageName: thirdImage)
+        
+        return [firstPage, secondPage, thirdPage]
+    }()
+    
     lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         layout.minimumLineSpacing = 0
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        cv.backgroundColor = UIColor.red
+        cv.backgroundColor = UIColor.white
         cv.dataSource = self
         cv.delegate = self
         cv.isPagingEnabled = true
@@ -33,17 +52,19 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return pages.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath)
-        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! PageCell
+        let page = pages[indexPath.item]
+        cell.page = page
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: view.frame.width, height: view.frame.height)
     }
+    
 
 }
 

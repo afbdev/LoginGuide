@@ -13,6 +13,7 @@
 		4F15277D1E33BF89005279E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F15277C1E33BF89005279E0 /* Assets.xcassets */; };
 		4F1527801E33BF89005279E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F15277E1E33BF89005279E0 /* LaunchScreen.storyboard */; };
 		4F1527881E33D99A005279E0 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1527871E33D99A005279E0 /* PageCell.swift */; };
+		4F15278A1E33E128005279E0 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1527891E33E128005279E0 /* Page.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		4F15277F1E33BF89005279E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F1527811E33BF89005279E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F1527871E33D99A005279E0 /* PageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
+		4F1527891E33E128005279E0 /* Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				4F1527751E33BF89005279E0 /* AppDelegate.swift */,
 				4F1527771E33BF89005279E0 /* ViewController.swift */,
 				4F1527871E33D99A005279E0 /* PageCell.swift */,
+				4F1527891E33E128005279E0 /* Page.swift */,
 				4F1527791E33BF89005279E0 /* Main.storyboard */,
 				4F15277C1E33BF89005279E0 /* Assets.xcassets */,
 				4F15277E1E33BF89005279E0 /* LaunchScreen.storyboard */,
@@ -142,6 +145,7 @@
 			files = (
 				4F1527781E33BF89005279E0 /* ViewController.swift in Sources */,
 				4F1527761E33BF89005279E0 /* AppDelegate.swift in Sources */,
+				4F15278A1E33E128005279E0 /* Page.swift in Sources */,
 				4F1527881E33D99A005279E0 /* PageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,6 +310,7 @@
 				4F1527861E33BF89005279E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
