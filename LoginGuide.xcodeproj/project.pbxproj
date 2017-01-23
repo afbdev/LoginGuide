@@ -66,12 +66,12 @@
 				4F1527771E33BF89005279E0 /* ViewController.swift */,
 				4F1527871E33D99A005279E0 /* PageCell.swift */,
 				4F1527891E33E128005279E0 /* Page.swift */,
+				4FBB2F551E35176800C1F50A /* Extensions.swift */,
+				4FBB2F571E3571D600C1F50A /* LoginCell.swift */,
 				4F1527791E33BF89005279E0 /* Main.storyboard */,
 				4F15277C1E33BF89005279E0 /* Assets.xcassets */,
 				4F15277E1E33BF89005279E0 /* LaunchScreen.storyboard */,
 				4F1527811E33BF89005279E0 /* Info.plist */,
-				4FBB2F551E35176800C1F50A /* Extensions.swift */,
-				4FBB2F571E3571D600C1F50A /* LoginCell.swift */,
 			);
 			path = LoginGuide;
 			sourceTree = "<group>";
