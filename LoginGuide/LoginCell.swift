@@ -32,13 +32,23 @@ class LoginCell: UICollectionViewCell {
         tf.isSecureTextEntry = true
         return tf
     }()
-    let loginButton: UIButton = {
+    lazy var loginButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Log In", for: .normal)
         button.backgroundColor = UIColor(red: 247/255, green: 154/255, blue: 27/255, alpha: 1)
         button.setTitleColor(.white, for: .normal)
+        button.addTarget(self, action: #selector(handleLogin), for: .touchUpInside)
+        
         return button
     }()
+    
+//    var loginController: LoginController?
+    weak var delegate: LoginControllerDelegate?
+    
+    func handleLogin() {
+//        loginController?.finishLoggingIn()
+        delegate?.finishLoggingIn()
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
