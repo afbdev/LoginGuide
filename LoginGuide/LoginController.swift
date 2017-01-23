@@ -188,8 +188,11 @@ class LoginController: UIViewController, UICollectionViewDataSource, UICollectio
         // video 9, 15:30
         let rootViewController = UIApplication.shared.keyWindow?.rootViewController
         guard let mainNavigationController = rootViewController as? MainNavigationController else { return }
-        
         mainNavigationController.viewControllers = [HomeController()]
+        
+        UserDefaults.standard.setIsLoggedIn(value: true)
+//        UserDefaults.standard.set(true, forKey: "isLoggedIn")
+//        UserDefaults.standard.synchronize()
         
         dismiss(animated: true, completion: nil)
     }

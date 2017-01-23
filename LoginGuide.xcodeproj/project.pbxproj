@@ -17,6 +17,8 @@
 		4FBB2F561E35176800C1F50A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBB2F551E35176800C1F50A /* Extensions.swift */; };
 		4FBB2F581E3571D600C1F50A /* LoginCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBB2F571E3571D600C1F50A /* LoginCell.swift */; };
 		4FBB2F5A1E35AA4E00C1F50A /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBB2F591E35AA4E00C1F50A /* MainNavigationController.swift */; };
+		4FBB2F5C1E35BB9300C1F50A /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBB2F5B1E35BB9300C1F50A /* HomeController.swift */; };
+		4FBB2F5E1E35BCEF00C1F50A /* UserDefaults+helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBB2F5D1E35BCEF00C1F50A /* UserDefaults+helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		4FBB2F551E35176800C1F50A /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		4FBB2F571E3571D600C1F50A /* LoginCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginCell.swift; sourceTree = "<group>"; };
 		4FBB2F591E35AA4E00C1F50A /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		4FBB2F5B1E35BB9300C1F50A /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		4FBB2F5D1E35BCEF00C1F50A /* UserDefaults+helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+helpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,8 @@
 				4F15277E1E33BF89005279E0 /* LaunchScreen.storyboard */,
 				4F1527811E33BF89005279E0 /* Info.plist */,
 				4FBB2F591E35AA4E00C1F50A /* MainNavigationController.swift */,
+				4FBB2F5B1E35BB9300C1F50A /* HomeController.swift */,
+				4FBB2F5D1E35BCEF00C1F50A /* UserDefaults+helpers.swift */,
 			);
 			path = LoginGuide;
 			sourceTree = "<group>";
@@ -156,9 +162,11 @@
 				4F1527781E33BF89005279E0 /* LoginController.swift in Sources */,
 				4F1527761E33BF89005279E0 /* AppDelegate.swift in Sources */,
 				4F15278A1E33E128005279E0 /* Page.swift in Sources */,
+				4FBB2F5C1E35BB9300C1F50A /* HomeController.swift in Sources */,
 				4FBB2F5A1E35AA4E00C1F50A /* MainNavigationController.swift in Sources */,
 				4F1527881E33D99A005279E0 /* PageCell.swift in Sources */,
 				4FBB2F581E3571D600C1F50A /* LoginCell.swift in Sources */,
+				4FBB2F5E1E35BCEF00C1F50A /* UserDefaults+helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
